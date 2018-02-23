@@ -1,0 +1,6 @@
+{
+  "uid": "monocle-gateway",
+  "append": true,
+  "watch": false,
+  "script": "index.js"
+}
