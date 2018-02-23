@@ -1,0 +1,43 @@
+# Build files
+out
+target
+gen
+build
+dist
+lib
+
+# Log directory
+log
+
+# NodeJS Modules
+node_modules
+package-lock.json
+
+# IntelliJ files
+.idea
+*.iml
+
+# Eclipse files
+.settings
+.classpath
+.project
+.externalToolBuilders
+.metadata
+maven-eclipse.xml
+
+# Vim files
+*.swp
+
+# Mac files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# JavaScript Files
+*.js
+
+# Ignore App Config File
+config.json
+
+
