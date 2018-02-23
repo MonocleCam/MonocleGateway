@@ -1,4 +1,6 @@
 {
-  "server-port": 8080,
+  "service-port": 8080,
+  "camera-username": "admin",
+  "camera-password": "password",
   "monocle-api-token": "____YOUR_API_TOKEN_GOES_HERE____"
 }

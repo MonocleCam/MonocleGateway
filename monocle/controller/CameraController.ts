@@ -30,7 +30,7 @@
 import {EventEmitter} from "events";
 import * as Onvif from 'node-onvif';
 import * as _ from 'underscore';
-import * as url from 'url';
+import { URL } from 'url';
 import {Camera} from "../";
 
 // Default Camera Controller Options/Configuration
@@ -466,14 +466,14 @@ export class CameraController extends EventEmitter{
         return new Promise<any> ((resolve, reject) => {
             this._initialized = false;
             self.emit("uninitialized", source);
-            let u = url.parse(source.uri, false);
 
-            // TODO : DEAL WITH CAMERA USERNAME AND PASSWORD HERE
+            // get the URI hostname, username and password from the camera source object
+            let u = new URL(source.uri);
             //Create an OnvifDevice object
             self._device = new Onvif.OnvifDevice({
                 xaddr: `http://${u.hostname}/onvif/device_service`,
-                user : 'admin',
-                pass : 'password'
+                user : self._options["camera-username"] || u.username,
+                pass : self._options["camera-password"] || u.password
             });
 
             // initialize onvif device

@@ -76,7 +76,7 @@ function reconnect(client){
 /**
  * MonocleClient
  * ---------------
- * This class provides a connectin and communicate channel to the Monocle Platform
+ * This class provides a connecting and communicate channel to the Monocle Platform
  */
 export class MonocleClient extends EventEmitter {
 

@@ -35,7 +35,7 @@ import {Camera, CameraSource} from "../";
 
 // Default Options
 const default_options = {
-    port: 8080,
+    "service-port": 8080,
     perMessageDeflate: false
 };
 
@@ -84,7 +84,7 @@ export class PTZControllerService extends EventEmitter{
             this._options = default_options;
 
         // start web-socket server
-        this._wss = new WebSocket.Server({ port: this._options.port }, ()=> {
+        this._wss = new WebSocket.Server({ port: this._options["service-port"] }, ()=> {
             let self = this;
 
             /**
