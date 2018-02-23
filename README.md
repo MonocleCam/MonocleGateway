@@ -22,3 +22,15 @@ ___Read the complete article on this project at:___ ___https://www.hackster.io/m
 
 ## Version History
 * 0.1 - Initial Release (2018-02-24)
+
+
+## PTZ Controller Projects
+
+The PTZ Controller sample projects can be found in the [MonocleArduino](https://github.com/MonocleCam/MonocleArduino) repository.
+
+* Deluxe 3-Axis Joystick PTZ Controller
+* Basic 2-Axis Joystick PTZ Controller
+* Retro Gaming Joystick PTZ Controller
+* IR Remote Control PTZ Controller
+
+![project](https://github.com/MonocleCam/MonocleArduino/raw/master/examples/example-projects.png)
